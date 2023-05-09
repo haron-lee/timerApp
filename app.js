@@ -28,7 +28,12 @@ function startTimer() {
   minutes.value = m < 10 ? `0${m}` : m;
   seconds.value = s < 10 ? `0${s}` : s;
 
-  if (timing === 0 && seconds.value === '00') {
+  // 00초가 보여진 후에 알림이 뜨게 수정필요
+  if (
+    hours.value === '00' &&
+    minutes.value === '00' &&
+    seconds.value === '00'
+  ) {
     alert('타이머가 완료되었습니다!');
     clearInterval(interval);
   }

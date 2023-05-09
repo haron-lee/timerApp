@@ -1,0 +1,133 @@
+@import './variable';
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Pretendard-Regular';
+  background: linear-gradient(to left top, $dark, $light);
+  box-sizing: border-box;
+}
+
+input {
+  background: inherit;
+  border: none;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.logo {
+  padding-top: 72px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  img {
+    width: 244px;
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 400px;
+  padding: 50px;
+  background: linear-gradient(to left top, $box-right, $box-left);
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+
+  .title {
+    margin: auto;
+    margin-bottom: 32px;
+    padding-bottom: 23px;
+    font-weight: $bold;
+    width: 312px;
+    border-bottom: 2px solid $border;
+  }
+
+  .timer-box {
+    .timer {
+      margin-bottom: 40px;
+
+      img {
+        margin: 0 8px;
+      }
+
+      label {
+        font-size: $sm;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      input {
+        width: 80px;
+        text-align: center;
+        border: 1px solid $border;
+        border-radius: 10px;
+        padding: 16px;
+        color: white;
+        font-weight: $bold;
+        font-size: $xl;
+        box-sizing: border-box;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+
+      .hrs-box,
+      .min-box,
+      .sec-box {
+        display: inline-block;
+      }
+    }
+
+    .btn-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      .start,
+      .reset {
+        color: white;
+        font-weight: 700;
+        font-size: $md;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .start {
+        background: $start;
+      }
+
+      .reset {
+        background: $reset;
+      }
+    }
+  }
+}
+
+.weniv-corp {
+  padding-top: 60px;
+  text-align: center;
+}

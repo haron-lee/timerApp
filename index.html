@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+  <h1 class="logo"><img src="./img/weniv-logo.png" alt="위니브 로고"></h1>
+  <div class="container">
+    <h2 class="title">TIMER</h2>
+    <!-- 가상요소 라인 필요 -->
+    <main class="timer-box">
+      <div class="timer">
+        <div class="hrs-box">
+          <label for="hrs">HRS</label>
+          <input id="hrs" value="00" type="number">
+        </div>
+        <img src="./img/dot.png" alt="시계 도트">
+        <div class="min-box">
+          <label for="min">MIN</label>
+          <input id="min" value="00" type="number">
+        </div>
+        <img src="./img/dot.png" alt="시계 도트">
+        <div class="sec-box">
+          <label for="sec">SEC</label>
+          <input id="sec" value="00" type="number">
+        </div>
+      </div>
+      <div class="btn-box">
+        <button class="start" type="button">START</button>
+        <button class="reset" type="button">RESET</button>
+      </div>
+    </main>
+  </div>
+  <footer class="weniv-corp">
+    <img src="./img/weniv-corp.svg" alt="위니브">
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
